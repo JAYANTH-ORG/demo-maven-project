@@ -8,10 +8,6 @@ on:
 
 jobs:
   scan:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run Shared Dependency & Vulnerability Bot
-        uses: JAYANTH-ORG/shared-librarys/.github/workflows/dependency-vuln-bot.yml@master
-        # with:
-          # Add any required inputs here
+    uses: JAYANTH-ORG/shared-librarys/.github/workflows/dependency-vuln-bot.yml@master
+    # with:
+      # Add any required inputs here
