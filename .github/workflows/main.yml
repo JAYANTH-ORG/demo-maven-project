@@ -1,5 +1,6 @@
 name: Dependency & Vulnerability Scan
-
+on:
+  workflow_dispatch:
 on:
   pull_request:
     branches: [ master ]
