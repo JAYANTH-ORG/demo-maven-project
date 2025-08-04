@@ -7,9 +7,8 @@ on:
     branches: [ master ]
 
 jobs:
-  scan:
-    uses: JAYANTH-ORG/shared-librarys/.github/workflows/reusable-dependency-scan.yml@master
+  fast-scan:
+    uses: JAYANTH-ORG/shared-librarys/.github/workflows/fast-dependency-scan.yml@master
     with:
       scan-maven: true
       scan-npm: false
-      scan-docker: false
