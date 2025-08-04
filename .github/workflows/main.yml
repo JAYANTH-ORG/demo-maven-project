@@ -8,6 +8,8 @@ on:
 
 jobs:
   scan:
-    uses: JAYANTH-ORG/shared-librarys/.github/workflows/dependency-vuln-bot.yml@master
-    # with:
-      # Add any required inputs here
+    uses: JAYANTH-ORG/shared-librarys/.github/workflows/reusable-dependency-scan.yml@master
+    with:
+      scan-maven: true
+      scan-npm: false
+      scan-docker: false
