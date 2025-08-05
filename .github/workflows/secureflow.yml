@@ -61,7 +61,7 @@ jobs:
 
     - name: Run SecureFlow security scan
       id: security-scan
-      uses: ./.github/actions/secureflow-scan
+      uses: JAYANTH-ORG/SecureFlow/.github/actions/secureflow-scan@topic/backward-compatability-check
       with:
         target: '.'
         project-type: 'java-maven'
