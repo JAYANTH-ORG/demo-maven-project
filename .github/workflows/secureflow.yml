@@ -5,8 +5,9 @@
 name: 🛡️ Java Security Scan
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main, master, develop ]
+    branches: [ main, master, develop, topic/testing ]
   pull_request:
     branches: [ main, master ]
   schedule:
