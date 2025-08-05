@@ -45,7 +45,7 @@ jobs:
         cache: maven
 
     - name: Setup SecureFlow
-      uses: ./.github/actions/setup-secureflow
+      uses: JAYANTH-ORG/SecureFlow/.github/actions/setup-secureflow@topic/backward-compatability-check
       with:
         python-version: '3.11'
         secureflow-repo: 'JAYANTH-ORG/SecureFlow'
